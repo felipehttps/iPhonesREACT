@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 
+
 export const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -43,7 +44,7 @@ export const Login = () => {
       <Home>
             <Logo src="/logotransp.png" ></Logo>
             <Form onSubmit={handleSubmit}>
-                <TitleLogin>CADASTRO</TitleLogin>
+                <TitleLogin>LOGIN</TitleLogin>
                 {message && <span>{message}</span>}
                 <InputPro title="Your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="e-mail" required></InputPro>
                 <InputPro title="Your password" type="password" onChange={(e) => setPassword(e.target.value)} placeholder="senha" value={password} required></InputPro>

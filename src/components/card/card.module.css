@@ -1,13 +1,16 @@
 .card {
     display: none;
     transition: opacity 0.5s ease;
+    overflow: hidden;
 }
 
 .card.ativo {
     display: block;
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
