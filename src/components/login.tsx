@@ -2,8 +2,9 @@ import { FormEvent, useState } from "react";
 import { Checkbox } from "../buttons/checkbox";
 import { TitleLogin } from "../buttons/input.styles";
 import { InputPro } from "../buttons/inputs";
-import { Button, Form } from "../styles/home.style";
+import { Button, Form, Logo } from "../styles/home.style";
 import { supabase } from "../assets/supabase";
+import { Link } from "react-router-dom";
 
 
 
@@ -47,10 +48,12 @@ export const Login = () => {
 
     return (
         <Form>
+            <Logo src="/logotransp.png" ></Logo>
             <TitleLogin>LOGIN</TitleLogin>
-            <InputPro title="Your e-mail" onChange={handleUsername} value={username} ></InputPro>
-            <InputPro title="Your password" type="password" onChange={handlePassword} value={password}></InputPro>
+            <InputPro title="Your e-mail" onChange={handleUsername} value={username} placeholder="e-mail" required></InputPro>
+            <InputPro title="Your password" type="password" onChange={handlePassword} placeholder="senha" value={password}></InputPro>
             <Checkbox />
+            <Link to="/cadastro" >Não possui conta? Clique aqui</Link>
             <Button type="submit" onClick={handleLogin} >Sign in</Button>
         </Form>
 

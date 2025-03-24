@@ -1,18 +1,22 @@
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Login } from "./components/login";
-import { Logo, Home,} from "./styles/home.style";
+import { Cadastro } from "./components/cadastro";
+import { Site } from "./components/site";
 
 
 function App() {
 
   return (
-    
-    <Home>
+  <BrowserRouter>
+  <Login></Login>
+    <Routes>
       
-      <Logo src="/logotransp.png" ></Logo>
-      <Login />
-     </Home>
-    
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />}/>
+      <Route path="/dashboard" element={<Site />}/>
+    </Routes>
+  </BrowserRouter>
   )
 };
 
