@@ -10,8 +10,6 @@ export const Logo = styled.img`
 
 export const Home = styled.div`
     display:flex;
-    justify-content: center;
-    align-items: stretch;
     
 `;
 export const Form = styled.form`
