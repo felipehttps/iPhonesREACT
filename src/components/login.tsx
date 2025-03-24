@@ -4,6 +4,7 @@ import { InputPro } from "../buttons/inputs";
 import { Button, Form, Home, Logo } from "../styles/home.style";
 import { supabase } from "../assets/supabase";
 import { Link, useNavigate } from "react-router-dom";
+import styles from './footer/home.module.css';
 
 
 
@@ -45,7 +46,7 @@ export const Login = () => {
             <Logo src="/logotransp.png" ></Logo>
             <Form onSubmit={handleSubmit}>
                 <TitleLogin>LOGIN</TitleLogin>
-                {message && <span>{message}</span>}
+                {message && <span className={styles.tag}>{message}</span>}
                 <InputPro title="Your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="e-mail" required></InputPro>
                 <InputPro title="Your password" type="password" onChange={(e) => setPassword(e.target.value)} placeholder="senha" value={password} required></InputPro>
                 <Link to="/cadastro" >Nao possui uma conta? Clique aqui</Link>

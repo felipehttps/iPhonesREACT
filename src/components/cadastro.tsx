@@ -4,6 +4,7 @@ import { InputPro } from "../buttons/inputs";
 import { TitleLogin } from "../buttons/input.styles";
 import { FormEvent, useState } from "react";
 import { supabase } from "../assets/supabase";
+import styles from './footer/home.module.css';
 
 
 export const Cadastro = () => {
@@ -38,7 +39,7 @@ export const Cadastro = () => {
             <Logo src="/logotransp.png" ></Logo>
             <Form onSubmit={handleSubmit}>
                 <TitleLogin>CADASTRO</TitleLogin>
-                {message && <span>{message}</span>}
+                {message && <span className={styles.tag}>{message}</span>}
                 <InputPro title="Your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="e-mail" required></InputPro>
                 <InputPro title="Your password" type="password" onChange={(e) => setPassword(e.target.value)} placeholder="senha" value={password} required></InputPro>
                 <Link to="/" >Ja possui uma conta? Clique aqui</Link>

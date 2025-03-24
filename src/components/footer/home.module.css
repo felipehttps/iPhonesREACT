@@ -162,7 +162,10 @@ main {
     background-color: white;
 }
     
-
+.tag{
+    color: black;
+    font-size: 15px;
+}
 
 
 fieldset{
