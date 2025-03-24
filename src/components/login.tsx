@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import { Checkbox } from "../buttons/checkbox";
 import { TitleLogin } from "../buttons/input.styles";
 import { InputPro } from "../buttons/inputs";
 import { Button, Form, Home, Logo } from "../styles/home.style";
@@ -49,6 +48,7 @@ export const Login = () => {
                 <InputPro title="Your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="e-mail" required></InputPro>
                 <InputPro title="Your password" type="password" onChange={(e) => setPassword(e.target.value)} placeholder="senha" value={password} required></InputPro>
                 <Link to="/cadastro" >Nao possui uma conta? Clique aqui</Link>
+                <Link to="/Site" >site</Link>
                 <Button type="submit" >Sign Un</Button>
             </Form>
         </Home>

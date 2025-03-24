@@ -1,0 +1,42 @@
+.home {
+    font-family: Arial, sans-serif;
+}
+
+.perfil {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    background-color: rgb(243 244 246);
+}
+
+.cardComprar {
+    margin-top: 2rem;
+}
+
+.fotosTres {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.qlq {
+    text-align: center;
+}
+
+.qlq img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.sobre {
+    padding: 2rem;
+}
+
+.linha {
+    margin-bottom: 1rem;
+}
+
+.hrFim {
+    margin: 2rem 0;
+}

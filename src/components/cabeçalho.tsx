@@ -17,4 +17,3 @@
 //     )
 // };
 
-//despesa, indices, sobre

@@ -1,10 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
-import Header from '../components/header/header';
-import Card from '../components/card/card';
-import Footer from '../components/footer/footer';
-import styles from './home.module.css';
-
+import styles from './footer/home.module.css';
+import Header from './header/header';
+import Card from './card/card';
+import Footer from './footer/footer';
+/// importar imagens
 
 
 

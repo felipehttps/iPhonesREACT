@@ -4,6 +4,7 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Cadastro } from './components/cadastro.tsx'
 import { Login } from './components/login.tsx'
+import Site from './components/site.tsx'
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Login/>
+  },
+  {
+    path: '/site',
+    element: <Site />
   }
 ]);
 
